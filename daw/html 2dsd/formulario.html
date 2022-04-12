@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários</title>
+</head>
+
+<body>
+
+  <br><br>
+  <center>
+    <h1><u>Formulario- Cadastro de Funcionário</u></h1>
+  </center>
+  <br>
+
+  <form>
+
+    <label for="nome">Nome:</label> <br>
+    <input type="text" name="nome" id="nome" size="60" maxlength="45" minlength="3" required placeholder="Nome">
+    <br><br>
+
+    <label for="datanasc">Idade:</label> <br>
+    <input type="number" name="idade" id="idade" size="2" max="90" min="18" required step="2" value="18">
+    <br><br>
+
+    <label for="sexo">Sexo:
+  </form></label>
+  M<input type="radio" name="sexo" value="M">
+  F<input type="radio" name="sexo" value="F" checked>
+  <br><br>
+
+  <label for="telefone">Telefone</label> <br>
+  <input type="text" name="telefone" id="telefone" size="15" maxlength="12" minlength="12" required
+    placeholder="Digite seu telefone">
+  <br><br>
+
+
+  <label for="email">Email</label> <br>
+  <input type="text" name="email" id="email" size="25" maxlength="25" minlength="12" required
+    placeholder="Digite seu email">
+  <br><br>
+
+  <label for="senha">Senha</label><br>
+  <input type="passoword" name="senha" id="senha" size="10" placeholder="Senha" maxlength="10" minlength="6" required>
+  <br><br>
+
+  <label for="cargo">Cargo</label><br>
+  <input type="text" name="cargo" id="cargo" value="Professor" readonly size="10">
+  <br><br>
+
+  <label for="periodoaula">Periodos de Aula</label><br>
+  <input type="checkbox" name="manhã" value="M" checked> Manhã
+  <input type="checkbox" name="tarde" value="T"> Tarde
+  <input type="checkbox" name="noite" value="N"> Noite
+  <br><br>
+
+  Curso:<br>
+  <select name="curso" id="curso">
+    <option value="DS">desenvolvimento de sistemas</option>
+    <option value="edificações">Edificações</option>
+    <option value="enfermagem" selected>Enfermagem</option>
+    <option value="geodesia">Geodesia e cartografia</option>
+    <option value="mecanica">Mecânica</option>
+    <option value="qualidade">Qualidade</option>
+  </select>
+  <br><br>
+
+  <label for="mensagem">Mensagem</label> <br>
+  <input type="text" name="mensagem" id="mensagem" size="100" maxlength="100" minlength="20" required
+    placeholder="Digite sua mensagem" spellcheck>
+  <br><br>
+
+
+
+  <input type="submit" name="btnEnviar" value="Enviar">
+  <input type="submit" name="btnVoltar" value="Voltar">
+  
+
+  </form>
+
+
+
+</body>
+
+</html>>:
