@@ -10,18 +10,26 @@
 
 <body>
 
+  <body bgcolor="#BEEAF7"></body>
+
   <br><br>
   <center>
     <h1><u>Formulario- Cadastro de Funcionário</u></h1>
   </center>
   <br>
-
+  
   <form>
+    
+    Buscar: <br>
+    <input type="search" placeholder="termo de pesquisa">
+    <input type="button" value="Buscar">
+    <br><br>
+
     <fieldset>
       <legend>Dados Pessoais</legend>
 
       <label for="nome">Nome:</label> <br>
-      <input type="text" name="nome" id="nome" size="60" maxlength="45" minlength="3" required placeholder="Nome">
+      <input type="text" name="nome" id="nome" size="60" maxlength="45" minlength="3" required placeholder="Nome" spellcheck>
       <br><br>
 
       <label for="foto">Foto 3x4:</label> <br>
@@ -116,20 +124,54 @@
         <option value="DAD">DAD</option>
       </select>
       <br><br>
-    
+
+
+      <br>
+
+      <label for="exp">Experiência<small> (de 0 a 10):</small></label><br>
+      <input type="range" id="exp" name="exp" min="0" max="10" value="0">
+      <br><br>
+
+      <legend><b>Veiculos</b></legend>
+      Veiculo que utilizara no campus: <br>
+      <select name="veiculo" id="veiculo">
+        <optgroup label="carros">
+          <option value="GM">GM</option>
+          <option value="VW" selected>VW</option>
+          <option value="Renault">Renault</option>
+        </optgroup>
+        <optgroup label="motos">
+          <option value="Honda">Honda</option>
+          <option value="Yamaha">Yamaha</option>
+          <option value="Suzuki">Suzuki</option>
+        </optgroup>
+      </select>
+
+      <br><br>
+      Conhecimento:<br>
+      <input name="conhecimento" id="conhecimento" list="x">
+      <datalist id="x">
+        <option value="HTML5">HTML5</option>
+        <option value="HTML4">HTML4</option>
+        <option value="CSS3">CSS3</option>
+        <option value="PHP">PHP</option>
+      </datalist>
+
+      <br><br>
+      Currículo Linkedin:<br>
+      <input type="url" id="curriculo" name="curriculo">
+      <br><br>
+
+
+
+      Observações:<br>
+      <textarea rows="5" cols="40" spellcheck="false" maxlength="100"></textarea>
+
     </fieldset>
     <br>
 
-    <label for="exp">Experiência<small> (de 0 a 10):</small></label><br>
-    <input type="range" id="exp" name="exp" min="0" max="10" value="0">
-    <br><br>
-
-    <label for="mensagem">Mensagem</label> <br>
-    <input type="text" name="mensagem" id="mensagem" size="100" maxlength="100" minlength="20" required
-      placeholder="Digite sua mensagem" spellcheck>
-    <br><br>
-
     <input type="submit" name="btnEnviar" value="Enviar">
+
   </form>
 </body>
 
