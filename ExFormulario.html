@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body bgcolor="#BEEAF7">
+ 
+  <br><br>
+  <center>
+    <h1 style="color: royalblue"><b><u> Assinatura  </u></b></h1>
+  </center>
+  <br>
+
+<div align="center">
+
+  <form >
+  
+    <fieldset style="width:30%";>
+      <legend><h3>Dados Pessoais</h3></legend>
+
+      <label for="nome">Nome Completo:</label> <br>
+      <input type="text" name="nome" id="nome" size="60" maxlength="45" minlength="3" required placeholder="Nome"
+        spellcheck>
+      <br><br>
+
+      <label for="cpf">CPF</label> <br>
+      <input type="number" name="cpf" id="cpf" size="20" maxlength="15" minlength="10" required placeholder="CPF" spellcheck>
+      <br><br>
+
+      <label for="datanasc">Data de nascimento</label> <br>
+      <input type="date" name="datanasc" id="datanasc">
+      <br><br>
+
+      <label for="idade">Idade:</label> <br>
+      <input type="number" name="idade" id="idade" size="2" max="90" min="18" required step="2" value="18">
+      <br><br>
+
+      <label for="sexo">Sexo:</label>
+      M<input type="radio" name="sexo" value="M">
+      F<input type="radio" name="sexo" value="F" checked>
+      <br><br>
+
+    </fieldset>
+
+    <fieldset style="width:30%";>
+      <legend><h3>Informações para o pagamento</h3></legend>
+
+      <label for="tipo">Tipo do Cartão</label><br>
+      Crédito<input type="radio" name="tpcartao" value="Crédito">
+      Débito<input type="radio" name="tpcartao" value="Débito" checked>
+      <br><br>
+
+    <label for="nomecart">Nome no Cartão:</label> <br>
+     <input type="text" name="nomecart" id="nomecart" size="20" maxlength="30" minlength="10" required placeholder="Nome no Cartão"spellcheck>
+    <br><br>
+
+    <label for="numcartao">Número do Cartão</label> <br>
+    <input type="number" name="numcartao" id="numcartao" size="20" maxlength="15" minlength="10" required placeholder="Número do Cartão" spellcheck>
+    <br><br>
+
+    Bandeira do Cartão::<br>
+    <select name="bandeira" id="bandeira">
+      <option value="Msc">Mastercard </option>
+      <option value="Visa">Visa</option>
+      <option value="Elo" selected>Elo</option>
+      <option value="Hpc">Hipercard</option>
+      <option value="Ame">American Express</option>
+      <option value="Mst">Maestro</option>
+    </select>
+    <br><br>
+
+    <label for="codseg">Código de Segurança:</label> <br>
+    <input type="number" name="codseg" id="codseg" size="4" maxlength="3" minlength="3" required placeholder="Cod Segurança Cartão" spellcheck>
+    <br><br>
+
+    <label type="mesInicio">Mês de inicio - Inscrição da Assinatura:</label><br>
+      <input type="month" id="mesInicio" name="MesInicio">
+      <br><br>
+
+
+      <label type="SemanaInicio">Semana escolhida para o pagamento da fatura:</label><br>
+      <input type="week" id="SemanaInicio" name="SemanaInicio">
+      <br><br>
+
+    </fieldset>
+
+      <fieldset style="width:30%";>
+      <legend><h3>Login</h3></legend>
+
+      <label for="email">Email</label> <br>
+      <input type="email" name="email" id="email" size="25" required placeholder="email">
+      <br><br>
+
+      <label for="senha">Senha</label><br>
+      <input type="passoword" name="senha" id="senha" size="10" placeholder="Senha" maxlength="10" minlength="6" required>
+      <br><br>
+      </fieldset>
+    <br>
+
+    <input type="submit" name="btnEnviar" value="Enviar">
+    <input type="reset" value="Limpar">
+
+  </form>
+</div>
+</body>
+</html> 
