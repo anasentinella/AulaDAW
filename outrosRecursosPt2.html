@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meter</title>
+  <style type="text/css">
+    #menu {
+      width: 100%;
+      background-color: black;
+      color: white;
+
+    }
+
+    .conteudo {
+      color: rgb(234, 66, 94);
+      border: 1px pink solid;
+      margin-top: 10px;
+      width: 40%;
+
+    }
+
+    .text {
+      background-color: rgb(168, 92, 239);
+      color: rgb(179, 192, 42);
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    #barra {
+      width: 100%;
+      background-color: rgb(192, 40, 200);
+      color: rgb(169, 160, 168);
+    }
+  
+  </style>
+
+  </head>
+<body>
+
+  <header id="barra"> Febre:<br>
+    <meter min="0" max="100" low="30" high="38" value="37"></meter>
+  </header>
+  
+  <!--
+    Abaixo de lox:vermelho
+    entre low e high: amarelo
+    acima de high:verde
+  -->
+
+  <br><br>
+  <hr>
+
+  <nav id="menu">
+    Unicamp | Cotil
+  </nav>
+  <header class="conteudo">
+    <p>
+      Os <span class="text"> cursos</span> do cotil são:
+    </p>
+    <ul>
+      <li>DSD</li>
+      <li>ENF</li>
+      <li>MED</li>
+    </ul>
+  </header>
+
+  <article class="conteudo">
+    <p>
+      As matéria do <span class="text"> Densolvimento de sistemas </span> do Cotil são:
+    </p>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JvaScript</li>
+    </ul>
+  </article>
+
+</body>
+
+</html>
