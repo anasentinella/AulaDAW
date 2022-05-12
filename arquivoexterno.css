@@ -1,0 +1,10 @@
+body{
+  background-color: rgb(207, 96, 17);
+}
+.cor{
+  color:rgba(101, 8, 8, 0.322);
+}
+h1{
+ font-size: 30px;
+ text-decoration: underline;
+}
