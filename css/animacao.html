@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animação </title>
+  <style type="text/css">
+  body{
+    background-color: black;
+  }
+  div{
+    width: 200px;
+    height: 100px;
+    
+    scale: reverse;
+    animation-name: rodar;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+    margin-top: 10%;
+  }
+   div:hover{
+    animation-play-state: paused;
+   }
+  @keyframes animacao2{
+     from{
+      transform: rotate(0deg);
+     }
+     to{
+      transform: rotate(100deg);
+     }
+  }
+  </style>
+</head>
+<body>
+  <center> <div><img src="../imagens/sandman.jpg">
+  </center>
+
+  </div>
+</body>
+</html>
