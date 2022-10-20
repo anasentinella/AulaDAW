@@ -7,15 +7,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <style type="text//css">
+      .myIconColor{
+       color: aqua;
+      }
+      .myContainer{
+        background-color: #fdd;
+        border-radius: 5px;
+        padding: 20px;
+      }
+      .card img{
+        height: 195px;
+      }
+
+       .card{
+        margin-bottom: 25px;
+       }
+
+    </style>
   <title>Site cotil</title>
 
 </head>
 
 <body>
   <!--inicio da navbar-->
-  <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color: #4d2938;">
+  <nav class="navbar navbar-expand-lg  navbar-dark bg-black" >
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Cotil</a>
+      <a class="navbar-brand" href="#">logos</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,7 +45,7 @@
             <a class="nav-link active" aria-current="page" href="cotil.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Nossa Escola</a>
+            <a class="nav-link" href="#">Estrutura</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -60,9 +79,114 @@
     </div>
   </nav>
   <!--fim da navbar-->
+<!--container abaixo navbar-->
+ <div class="container mt-3" >
+  <div class="row">
+    <div class="col-md-2 col-sm-12"></div>
+    <div class="col-md-3 col-sm-12 pt-2 text-danger" ><i class="bi bi-telephone-fill"></i>(19)2113-3300</div>
+    <div class="col-md-3 col-sm-12 pt-2 text-danger"><i class="bi bi-envelope-open-fill" ></i>Cotil@g.unicamp</div>
+    <div class="col-md-4 col-sm-12 pt-2">
+      <button class="btn btn-light border-danger"><i class="bi bi-facebook text-info"></i></button>
+      <button class="btn btn-light border-danger"><i class="bi bi-youtube text-danger "></i></button>
+      <button class="btn btn-light border-danger"><i class="bi bi-instagram text-danger"></i></button>
+    </div>
+  </div>
+  <hr class="border-danger" >
+  <h1 class="display-3">Colégio Técnico de Limeira</h1>
+  <p class="lead text-danger">Conheça nossa escola</p>
+ </div>
+ <!--Container cursos-->
+  <div class="container myContainer">
+    <h4 class="display-5">Nossos cursos</h4>
+     <!--1 linha da row-->
+    <div class="row">
+      <!--1a div da 1a row-->
+      <div class="col-md-4 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="./img/edificacoes.jpg" class="card-img-top" alt="Edificações">
+          <div class="card-body">
+            <h5 class="card-title">Edificações</h5>
+            <p class="card-text">O Técnico em Edificações atua em projetos arquitetônicos e complementares, 
+              na execução e manutenção de obras, na elaboração de orçamentos e cronogramas, 
+              no controle de qualidade, quantidade e logística de aquisição e estoque dos materiais de uma obra. </p>
+            <a href="edificacoes.html" class="btn btn-danger">Conheça</a>
+          </div>
+        </div>
+      </div>
+      <!--2a div da 2a row-->
+      <div class="col-md-4 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="./img/enfermagem.png" class="card-img-top" alt="Enfermagem">
+          <div class="card-body">
+            <h5 class="card-title">Enfermagem</h5>
+            <p class="card-text">O Técnico em Enfermagem atua junto a indivíduos e grupos sociais em todas as 
+              faixas etárias, na promoção, prevenção, recuperação e reabilitação dos processos saúde-doença. </p>
+            <a href="enfermagem.html" class="btn btn-danger">Conheça</a>
+          </div>
+        </div>
+      </div>
+      <!--3a div da 3a row-->
+      <div class="col-md-4 col-sm-12">
+        <div class="col-md-4 col-sm-12">
+          <div class="card" style="width: 18rem;">
+            <img src="./img/geodesia.jpg" class="card-img-top" alt="Geodésia">
+            <div class="card-body">
+              <h5 class="card-title">Geodésia</h5>
+              <p class="card-text">O Técnico em Geodésia e Cartografia realiza atividades destinadas ao 
+                conhecimento e à demarcação de limites e é capaz de gerar e fornecer informações 
+                necessárias para o conhecimento técnico, material e cultural de um determinado espaço.</p>
+              <a href="geodesia.html" class="btn btn-danger">Conheça</a>
+            </div>
+          </div>
+      </div>
 
+    </div>
+      <!--Fim da 1° linha -->
+      <div class="row">
+        <!--1a div da 2a row-->
+      <div class="col-md-4 col-sm-12">
+        <div class="card" style="width: 18rem;" >
+          <img src="./img/qualidade.png" class="card-img-top" alt="Qualidade">
+          <div class="card-body">
+            <h5 class="card-title">Qualidade</h5>
+            <p class="card-text">O Técnico em Qualidade utiliza ferramentas e métodos associados ao planejamento 
+            e controle da qualidade; elabora relatórios relacionados 
+            à qualidade das empresas;</p>
+            <a href="qualidade.html" class="btn btn-danger">Conheça</a>
+          </div>
+        </div>
+      </div>
 
+      <!--2a div da 2a row-->
+      <div class="col-md-4 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="./img/mecanica.jpg" class="card-img-top" alt="Mecânica">
+          <div class="card-body">
+            <h5 class="card-title">Mecânica</h5>
+            <p class="card-text">O Técnico em Mecânica avalia, reconhece e propõe soluções nas diversas áreas da 
+            tecnologia mecânica; interpreta desenhos, esquemas, fluxograma, produtos e processos produtivos; 
+            executa programas para máquinas;</p>
+            <a href="mecanica.html" class="btn btn-danger">Conheça</a>
+          </div>
+        </div>
+      </div>
 
+      <!--3a div da 2a row-->
+      <div class="col-md-4 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="./img/informatica.png" class="card-img-top" alt="Desenvolvimento de Sistemas">
+          <div class="card-body">
+            <h5 class="card-title">Desenvolvimento de Sistemas</h5>
+            <p class="card-text">O Técnico em Desenvolvimento de Sistemas busca inovações no desenvolvimento
+            de software para as mais diversas áreas do mercado; desenvolve aplicações desktop, web e para 
+            dispositivos móveis por meio de  métodos de análise.</p>
+            <a href="mecanica.html" class="btn btn-danger">Conheça</a>
+          </div>
+        </div>
+      </div>
+
+      </div>
+  </div>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
