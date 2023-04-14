@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora de Circunferência</title>
+	<script>
+		function calcularArea() {
+			var raio = document.getElementById("raio").value;
+			var area = Math.PI * raio * raio;
+			document.getElementById("area").value = area.toFixed(2);
+		}
+		
+		function calcularPerimetro() {
+			var raio = document.getElementById("raio").value;
+			var perimetro = 2 * Math.PI * raio;
+			document.getElementById("perimetro").value = perimetro.toFixed(2);
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<label for="raio">Raio:</label>
+		<input type="number" id="raio" name="raio"><br><br>
+        
+		<label for="area">Área:</label>
+		<input type="number" id="area" name="area" readonly><br><br>
+		
+		<label for="perimetro">Perímetro:</label>
+		<input type="number" id="perimetro" name="perimetro" readonly style="color: blue;"><br><br>
+		
+		<button type="button" onclick="calcularArea()">Calcular Área</button>
+		<button type="button" onclick="calcularPerimetro()">Calcular Perímetro</button>
+	</form>
+</body>
+</html>
